@@ -9,7 +9,7 @@ const Main = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #040405;
+    background-color: #13101b;
     cursor: pointer;
 
     :hover {
@@ -34,7 +34,7 @@ export default function ConhecimentosReusaveis(props) {
             Nome.innerHTML = props.Nome
             Texto.innerHTML = props.Texto
         }}>
-            <img src={Instagram} alt="Instagram"  />
+            <img src={props.imagem} alt="Instagram"  />
         </Main>
     )
 }
