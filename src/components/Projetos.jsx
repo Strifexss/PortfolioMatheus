@@ -35,6 +35,9 @@ export default function Projetos() {
                 <ProjetosCom/>
                 <ProjetosCom/>
                 <ProjetosCom/>
+                <ProjetosCom/>
+                <ProjetosCom/>
+                <ProjetosCom/>
             </section>
         </Main>
     )
