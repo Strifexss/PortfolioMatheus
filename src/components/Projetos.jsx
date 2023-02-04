@@ -2,7 +2,7 @@ import styled from "styled-components"
 import ProjetosCom from "./Reusaveis/ProjetosReusaveis"
 const Main = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -32,12 +32,7 @@ export default function Projetos() {
                 <ProjetosCom/>
                 <ProjetosCom/>
                 <ProjetosCom/>
-                <ProjetosCom/>
-                <ProjetosCom/>
-                <ProjetosCom/>
-                <ProjetosCom/>
-                <ProjetosCom/>
-                <ProjetosCom/>
+             
             </section>
         </Main>
     )

@@ -16,12 +16,11 @@ const Main = styled.div`
         border: none;
         border-radius: 0.8rem;
         background: rgb(97,41,226);
-background: linear-gradient(90deg, rgba(97,41,226,1) 0%, rgba(36,14,87,1) 100%);
+        background: linear-gradient(90deg, rgba(97,41,226,1) 0%, rgba(36,14,87,1) 100%);
         color: #fff;
         margin-top: 3rem;
         cursor: pointer;
         transition: 0.1s;
-
         a {
             text-decoration: none;
             color: inherit;

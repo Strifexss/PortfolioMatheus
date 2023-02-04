@@ -83,7 +83,7 @@ const Modal = styled.div`
     z-index: 1;
     display: grid;
     grid-template-rows: 10% 90% ;
-
+    border-radius: 2rem;
     section {
         display: flex;
         justify-content: center;
