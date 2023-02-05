@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import Instagram from "../imgs/Instagram.png"
 import Gmail from "../imgs/Gmail.png"
 import Linkedin from "../imgs/Linkedin.png"
 import SobreImg from "../imgs/SobreImagem.jpg"
@@ -13,6 +12,9 @@ const Main = styled.div`
     @media screen and (max-width: 900px) {
         height: 100vh;
     }
+
+    
+
 `
 
 const Box = styled.div`
@@ -32,6 +34,16 @@ const Box = styled.div`
         justify-content: center;
         align-items: center;
 }
+
+@media screen and (max-width: 1350px) and (min-width: 901px) {
+     width: 95vw ;
+    }
+
+@media screen and (max-width: 1630px) and (min-width: 1350px) {
+     width: 80vw ;
+    }
+
+
 `
 
 const Texto = styled.div`
@@ -123,7 +135,6 @@ export default function Sobre() {
                     <p>Front-Developer</p>
                     <h4>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,  </h4>
                    <section>
-                    <img src={Instagram} alt="Instagram" />
                     <img src={Linkedin} alt="Instagram" />
                     <img src={Gmail} alt="Instagram" />
                    </section>

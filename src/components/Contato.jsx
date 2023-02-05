@@ -1,5 +1,8 @@
 import styled from "styled-components"
 import LinkedinIcon from "../imgs/Linkedin.png"
+import GithubIcon from "../imgs/IconsGithub.png"
+import GmailIcon from "../imgs/Gmail.png"
+import WhatsIcon from "../imgs/IconWhats.png"
 const Main = styled.div`
     width: 100vw;
     height: 40vh;
@@ -48,23 +51,18 @@ export default function Contato() {
             <h1>Contato</h1>
             <Box>
               <Icone>
-                <a href="">
+                <a href="https://www.linkedin.com/in/matheus-henrique-lins-de-melo-662b27235/">
                 <img src={LinkedinIcon} alt="Linkedin" />
                 </a>
               </Icone>
               <Icone>
-                <a href="">
-                <img src={LinkedinIcon} alt="Linkedin" />
+                <a href="https://github.com/Strifexss">
+                <img src={GithubIcon} alt="Github" />
                 </a>
               </Icone>
               <Icone>
-                <a href="">
-                <img src={LinkedinIcon} alt="Linkedin" />
-                </a>
-              </Icone>
-              <Icone>
-                <a href="">
-                <img src={LinkedinIcon} alt="Linkedin" />
+                <a href="https://wa.me/5583988003516">
+                <img src={WhatsIcon} alt="Whatsapp" />
                 </a>
               </Icone>
             </Box>

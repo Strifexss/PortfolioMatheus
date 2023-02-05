@@ -5,7 +5,7 @@ import VideoSite from '../../imgs/VideoSite.mp4'
 import Github from '../../imgs/GithubIcon.png'
 import { useState } from "react"
 const Main = styled.div`
-    width: 30rem;
+    width: 35rem;
     height: 25rem;
     background-color: #fff;
     margin: 2rem;
@@ -151,7 +151,7 @@ const TextoModal = styled.div`
     }
 `
 
-export default function ProjetosCom() {
+export default function ProjetosCom(props) {
     const [abrir, setAbrir] = useState(false)
 
     return(
@@ -161,10 +161,10 @@ export default function ProjetosCom() {
                     console.log(abrir)
                 }}>
             <section>
-                <img src={Arquitetura}alt="Projeto" />
+                <img src={props.imagem}alt="Projeto" />
             </section>
             <Texto>
-                <h2 >Arquitetura Site</h2>
+                <h2 >{props.titulo}</h2>
                 <a href="https://github.com/Strifexss?tab=repositories">
                 <img src={Github} alt="Github" />
                 </a>

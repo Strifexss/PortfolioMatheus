@@ -52,7 +52,11 @@ const Box = styled.div`
         flex-direction: column;
         height: 90vh;
 }
-`
+    @media screen and (max-width: 1450px) {
+        height: 110vh;
+        margin-bottom: 8rem;
+    }
+    `
 const Texto = styled.div`
     margin: 4rem;
     display: flex;
