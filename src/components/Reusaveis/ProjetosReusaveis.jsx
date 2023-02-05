@@ -70,8 +70,8 @@ const Texto = styled.div`
 `
 
 const Modal = styled.div`
-    width: 70rem;
-    height: 50rem;
+    width: 80rem;
+    height: 40rem;
     background-color: #1d123a;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ const Modal = styled.div`
     transform: translate(-50%, -50%);
     z-index: 1;
     display: grid;
-    grid-template-rows: 10% 90% ;
+    grid-template-rows: 15% 85%;
     border-radius: 2rem;
     section {
         display: flex;
@@ -98,6 +98,10 @@ const Modal = styled.div`
             justify-content: center;
             align-items: center;
             margin: 1rem;
+            cursor: pointer;
+            :hover {
+                border: 2px solid #301674;
+            }
         }
     }
    
@@ -114,8 +118,9 @@ const ModalPrincipal  = styled.div`
 
 
 video {
-        width: 30rem;
+        width: 40rem;
         height: auto;
+        margin: 1rem;
         }
 
 `
@@ -150,7 +155,11 @@ const TextoModal = styled.div`
         margin: 0;
     }
 `
-
+const Flexar = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 export default function ProjetosCom(props) {
     const [abrir, setAbrir] = useState(false)
 
@@ -165,9 +174,6 @@ export default function ProjetosCom(props) {
             </section>
             <Texto>
                 <h2 >{props.titulo}</h2>
-                <a href="https://github.com/Strifexss?tab=repositories">
-                <img src={Github} alt="Github" />
-                </a>
             </Texto>
           
         </Main>
@@ -177,20 +183,25 @@ export default function ProjetosCom(props) {
             animate={{opacity: 1}}
             transition={{}}
           
-            >   <section>
-                <h1 onClick={() => {setAbrir(!abrir)}} style={{cursor: 'pointer'}}>Fechar</h1>
-                </section>
+            > 
+            <section>
+            <h1 onClick={() => {
+                setAbrir(!abrir)
+            }}> Fechar</h1>
+            </section>
+             <Flexar>
                 <ModalPrincipal>
                     <video src={VideoSite} autoPlay loop controls></video>
                     <Atalhos>
-                        <button>Acessar Site</button>
-                        <button>Repositorio</button>
+                        <a href={props.Site}><button>Acessar Site</button></a>
+                        <a href={props.Repositorio}><button>Repositorio</button></a> 
                     </Atalhos>
-                    <TextoModal>
+                </ModalPrincipal>
+                <TextoModal>
                     <h1>Arquitetura Site</h1>
                         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, hic esse deleniti fuga perferendis eveniet, assumenda commodi itaque sapiente cumque ex accusantium atque nobis quas dolorum, eos dignissimos mollitia adipisci?</h2>
                     </TextoModal>
-                </ModalPrincipal>
+                    </Flexar>
             </Modal>
         }
         </>
