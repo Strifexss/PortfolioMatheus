@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Arquitetura from "../../imgs/Arquitetura.png"
 import {motion} from 'framer-motion'
-import VideoSite from '../../imgs/VideoSite.mp4'
+
 import Github from '../../imgs/GithubIcon.png'
 import { useState } from "react"
 const Main = styled.div`
@@ -104,6 +104,16 @@ const Modal = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: cennter;
+        width: 100vw;
+        height: 100vh;
+    }
+
    
 `
 
@@ -121,6 +131,10 @@ video {
         width: 40rem;
         height: auto;
         margin: 1rem;
+
+        @media screen and (max-width: 900px){
+            width: 25rem;
+        }
         }
 
 `
@@ -151,6 +165,7 @@ const TextoModal = styled.div`
     text-align: center;
     color: #9b9b9b;
     margin-top: 1rem;
+    padding: 1rem;
     h1 {
         margin: 0;
     }
@@ -159,6 +174,13 @@ const Flexar = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 export default function ProjetosCom(props) {
     const [abrir, setAbrir] = useState(false)
@@ -191,15 +213,15 @@ export default function ProjetosCom(props) {
             </section>
              <Flexar>
                 <ModalPrincipal>
-                    <video src={VideoSite} autoPlay loop controls></video>
+                    <video src={props.video} autoPlay loop controls></video>
                     <Atalhos>
                         <a href={props.Site}><button>Acessar Site</button></a>
                         <a href={props.Repositorio}><button>Repositorio</button></a> 
                     </Atalhos>
                 </ModalPrincipal>
                 <TextoModal>
-                    <h1>Arquitetura Site</h1>
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, hic esse deleniti fuga perferendis eveniet, assumenda commodi itaque sapiente cumque ex accusantium atque nobis quas dolorum, eos dignissimos mollitia adipisci?</h2>
+                    <h1>{props.titulo}</h1>
+                        <h2>{props.texto}</h2>
                     </TextoModal>
                     </Flexar>
             </Modal>
