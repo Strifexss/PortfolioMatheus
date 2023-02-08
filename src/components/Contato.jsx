@@ -47,21 +47,21 @@ background-color: black;
 
 export default function Contato() {
     return(
-        <Main>
+        <Main id="Contato">
             <h1>Contato</h1>
             <Box>
               <Icone>
-                <a href="https://www.linkedin.com/in/matheus-henrique-lins-de-melo-662b27235/">
+                <a href="https://www.linkedin.com/in/matheus-henrique-lins-de-melo-662b27235/" target="_blank">
                 <img src={LinkedinIcon} alt="Linkedin" />
                 </a>
               </Icone>
               <Icone>
-                <a href="https://github.com/Strifexss">
+                <a href="https://github.com/Strifexss" target="_blank">
                 <img src={GithubIcon} alt="Github" />
                 </a>
               </Icone>
               <Icone>
-                <a href="https://wa.me/5583988003516">
+                <a href="https://wa.me/5583988003516" target="_blank">
                 <img src={WhatsIcon} alt="Whatsapp" />
                 </a>
               </Icone>

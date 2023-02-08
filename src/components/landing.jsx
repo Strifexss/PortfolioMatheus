@@ -34,7 +34,7 @@ const Main = styled.div`
     h1 {
         text-align: center;
         color: #fff;
-        font-size: 3rem;
+        font-size: 4rem;
         span {
             color: #6129E2;
         }
@@ -50,7 +50,7 @@ const Main = styled.div`
 
 export default function Landing() {
     return(
-        <Main style={{ 
+        <Main id="Landing" style={{ 
             backgroundImage: `url(${backgroundImg})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
