@@ -10,7 +10,7 @@ const Main = styled.div`
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 900px) {
-        height: 100vh;
+        height: 110%;
     }
 
     
@@ -117,6 +117,7 @@ const Imagem = styled.div`
 
         @media screen and (max-width: 900px) {
             width: 20rem;
+            margin-top: 2rem;
         }
     }
 `
@@ -133,7 +134,7 @@ export default function Sobre() {
                     <h1>Quem sou eu?</h1>
                     <h1>Matheus Henrique</h1>
                     <p>Front-Developer</p>
-                    <h4>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,  </h4>
+                    <h4>Prazer me chamo Matheus, sou estudante de Ciências da Computação e sou um Desenvolvedor Web, apaixonado por tecnologia desde muito pequeno, no momento estudo bibliotecas e framworks voltados para o front-end porém possuo conhecimento em tecnologias back-end como NodeJs, Express e Sql, busco uma primeira oportunidade no mercado de trabalho, estou apto a aprender qualquer nova tecnologia que for necessária.</h4>
                    <section>
                     <img src={Linkedin} alt="Instagram" />
                     <img src={Gmail} alt="Instagram" />

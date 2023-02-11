@@ -11,6 +11,10 @@ const Main = styled.div`
     justify-content: space-around;
     align-items: center;
 
+    @media screen and (max-width: 900px){
+        display: none;
+    }
+
     h2 {
         color: #fff;
         cursor: pointer;

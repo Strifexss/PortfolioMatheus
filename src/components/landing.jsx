@@ -38,12 +38,19 @@ const Main = styled.div`
         span {
             color: #6129E2;
         }
+        @media screen and (max-width: 900px) {
+            font-size: 3rem;
+        }
     }
 
     h2 {
         color: #ffffff;
         font-weight: normal;
         text-align: center;
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 1rem;
     }
 
 `

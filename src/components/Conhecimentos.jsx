@@ -23,6 +23,7 @@ const Main = styled.div`
 
     @media screen and (max-width: 900px) {
         height: 110vh;
+        margin-top: 5rem;
     }
 
     section {
